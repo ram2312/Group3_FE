@@ -335,7 +335,7 @@ def ab_test(algorithm1, algorithm2, trainset, testset):
 # Running A/B test
 rmse_svd, rmse_knn, mae_svd, mae_knn = ab_test(a1, a2, trainset, testset)
 
-# Compare the results and print which is better
+# Compare the results and printing which is better
 if rmse_svd < rmse_knn:
     print('SVD is better in RMSE.')
 else:
@@ -345,3 +345,4 @@ if mae_svd < mae_knn:
     print('SVD is better in MAE.')
 else:
     print('KNNBasic is better in MAE.')
+
